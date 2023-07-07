@@ -100,31 +100,108 @@
         <div class="title text-center">
             <h2 class="position-relative d-inline-block">New Collection</h2>
         </div>
-        <div class="row">
-            <div class="d-flex flex-wrap justify-content-center mt-5">
-                <button type="button" class="btn m-2 text-dark active-filter-btn">All</button>
-                <button type="button" class="btn m-2 text-dark">Best sellers</button>
 
-                <button type="button" class="btn m-2 text-dark">Featured</button>
-                <button type="button" class="btn m-2 text-dark">New Collection</button>
+        <div class="row g-0">
+            <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                <button type="button"  class="btn m-2 text-dark active-filter-btn "data-filter="*">All</button>
+                <button type="button"  class="btn m-2 text-dark"data-filter=".best">Best sellers</button>
+
+                <button type="button"  class="btn m-2 text-dark"data-filter=".feat">Featured</button>
+                <button type="button" class="btn m-2 text-dark" data-filter=".new">New Collection</button>
             </div>
-            <div class="collection-list mt-5">
-                <div class="">
+            <div class="collection-list mt-5 row gx-0 gy-5 ">
+                <div class="col-md-4 col-lg-3 col-xl-3 p-2 best"> <!--Resim col büyüklüğü-->
                     <div class="collection-img position-relative">
                         <img src="images/products/nike-gb0fb81e07_1280.jpg" alt="" class="w-100 ">
                             <span class="position-absolute bg-primary text-white
                              d-flex align-items-center justify-content-center">Sale</span>
                     </div>
-                    <div class="">
-                        <div class="rating">
-                            <span class=""><i class="fa fa-star"></i></span>
-                            <span class=""><i class="fa fa-star"></i></span>
-                            <span class=""><i class="fa fa-star"></i></span>
-                            <span class=""><i class="fa fa-star"></i></span>
-                            <span class=""><i class="fa fa-star"></i></span>
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="fa fa-star"></i></span>
+                            <span class="text-primary"><i class="fa fa-star"></i></span>
+                            <span class="text-primary"><i class="fa fa-star"></i></span>
+                            <span class="text-primary"><i class="fa fa-star"></i></span>
+                            <span class="text-primary"><i class="fa fa-star"></i></span>
                         </div>
-                        <p class="Nike Air"></p>
-                        <span class="">$ 34.30</span>
+                        <p class="text-capitalize my-1">Nike Air</p>
+                        <span class="fw-bold ">$ 34.30</span>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-md-4 col-lg-3 col-xl-3 p-2 feat"> <!--Resim col büyüklüğü-->
+                    <div class="collection-img position-relative">
+                        <img src="images/products/jeans-g93f347abf_1280.jpg" alt="" class="w-100 ">
+                            <span class="position-absolute bg-primary text-white
+                             d-flex align-items-center justify-content-center">Sale</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="fa fa-star"></i></span>
+                            <span class="text-primary"><i class="fa fa-star"></i></span>
+                            <span class="text-primary"><i class="fa fa-star"></i></span>
+                            <span class="text-primary"><i class="fa fa-star"></i></span>
+                            <span class="text-primary"><i class="fa fa-star"></i></span>
+                        </div>
+                        <p class="text-capitalize my-1"> Jeans</p>
+                        <span class="fw-bold ">$ 14.30</span>
+                    </div>
+                </div>
+                 <!---->
+                 <div class="col-md-4 col-lg-3 col-xl-3 p-2 new"> <!--Resim col büyüklüğü-->
+                    <div class="collection-img position-relative">
+                        <img src="images/products/nike-gb0fb81e07_1280.jpg" alt="" class="w-100 ">
+                            <span class="position-absolute bg-primary text-white
+                             d-flex align-items-center justify-content-center">Sale</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="fa fa-star"></i></span>
+                            <span class="text-primary"><i class="fa fa-star"></i></span>
+                            <span class="text-primary"><i class="fa fa-star"></i></span>
+                            <span class="text-primary"><i class="fa fa-star"></i></span>
+                            <span class="text-primary"><i class="fa fa-star"></i></span>
+                        </div>
+                        <p class="text-capitalize my-1">Nike Air</p>
+                        <span class="fw-bold ">$ 34.30</span>
+                    </div>
+                </div>
+                 <!---->
+                 <div class="col-md-4 col-lg-3 col-xl-3 p-2 best"> <!--Resim col büyüklüğü-->
+                    <div class="collection-img position-relative">
+                        <img src="images/products/nike-gb0fb81e07_1280.jpg" alt="" class="w-100 ">
+                            <span class="position-absolute bg-primary text-white
+                             d-flex align-items-center justify-content-center">Sale</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="fa fa-star"></i></span>
+                            <span class="text-primary"><i class="fa fa-star"></i></span>
+                            <span class="text-primary"><i class="fa fa-star"></i></span>
+                            <span class="text-primary"><i class="fa fa-star"></i></span>
+                            <span class="text-primary"><i class="fa fa-star"></i></span>
+                        </div>
+                        <p class="text-capitalize my-1">Nike Air</p>
+                        <span class="fw-bold ">$ 34.30</span>
+                    </div>
+                </div>
+                 <!---->
+                 <div class="col-md-4 col-lg-3 col-xl-3 p-2 feat"> <!--Resim col büyüklüğü-->
+                    <div class="collection-img position-relative">
+                        <img src="images/products/nike-gb0fb81e07_1280.jpg" alt="" class="w-100 ">
+                            <span class="position-absolute bg-primary text-white
+                             d-flex align-items-center justify-content-center">Sale</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="fa fa-star"></i></span>
+                            <span class="text-primary"><i class="fa fa-star"></i></span>
+                            <span class="text-primary"><i class="fa fa-star"></i></span>
+                            <span class="text-primary"><i class="fa fa-star"></i></span>
+                            <span class="text-primary"><i class="fa fa-star"></i></span>
+                        </div>
+                        <p class="text-capitalize my-1">Nike Air</p>
+                        <span class="fw-bold ">$ 34.30</span>
                     </div>
                 </div>
             </div>
@@ -148,10 +225,9 @@
     </div>
   </section>
   <!-- End of contact section -->
-
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <script src="js/script.js"></script>
     <script src="js/jquery-3.7.0.js"></script>
-    
     <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

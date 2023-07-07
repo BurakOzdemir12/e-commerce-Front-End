@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<!--Navbar Starts-->
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+    <div class="container">
+        <a class="navbar-brand d-flex justify-content-between align-items-center
+        order-lg-0" href="index.html">
+            <img src="images/logo/logo.ico" alt="website brand">
+                <span class="text-uppercase fw-lighter ms-2">Shopping </span>
+        </a>
+
+        <div class="order-lg-2 nav-btns">
+            <button type="button" class="btn position-relative"> 
+                <i class="fa fa-shopping-cart"></i><!--font awesome ile icon sembol koyma-->
+                <span class="position-absolute top-0 
+                start-100 translate-middle badge bg-primary">5</span>
+            </button>
+            <button type="button" class="btn position-relative"> 
+                <i class="fa fa-heart"></i>
+                <span class="position-absolute top-0 
+                start-100 translate-middle badge bg-primary">2</span>
+            </button>
+            <button type="button" class="btn position-relative"> 
+                <i class="fa fa-search"></i>
+            </button>
+            <h5 class="black-lives-matter position-relative">#Black Lives Matter</h5>
+        </div>
+        <button class="navbar-toggler border-0" type="button"
+             data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse  navbar-collapse order-lg-1" id="navMenu"> <!--Nav menü -->
+            <ul class="navbar-nav mx-auto text-center">
+                <li class="nav-item px-2 py-2"> <!--ul li a kullanarak nav menüye item ekledik-->
+                    <a class="nav-link text-uppercase text-dark" href="#header">home</a>
+                </li>
+                <li class="nav-item px-2 py-2">
+                    <a class="nav-link text-uppercase text-dark" href="#collection">collection</a>
+                </li>
+                <li class="nav-item px-2 py-2">
+                    <a class="nav-link text-uppercase text-dark" href="#specials">Specials</a>
+                </li>
+                <li class="nav-item px-2 py-2">
+                    <a class="nav-link text-uppercase text-dark" href="#market">shop</a>
+                </li>
+                <li class="nav-item px-2 py-2">
+                    <a class="nav-link text-uppercase text-dark" href="#blogs">Blog</a>
+                </li>
+                <li class="nav-item px-2 py-2">
+                    <a class="nav-link text-uppercase text-dark" href="#about">about</a>
+                </li>
+                <li class="nav-item px-2 py-2">
+                    <a class="nav-link text-uppercase text-dark" href="#popular">Sign in</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--Navbar Ends-->
+
+<!--Header Starts-->
+<header id="header" class="vh-100 carousel slide" data-bs-ride="carousel"
+ style="padding-top: 104px;">
+    <div class="container h-100 d-flex align-items-center carousel-inner ">
+
+        <div class="text-center carousel-item active header1">
+            <h2 class="text-capitalize text-white ">best collection</h2>
+            <h1 class="text-uppercase py-2 fw-bold text-white">arrivals</h1>
+            <a href="" class="btn mt-3 text-uppercase">Shop Now</a>
+    </div>
+    <div class="text-center carousel-item header1 ">
+        <h2  class="text-capitalize text-white">Best price</h2>
+        <h1 class="text-uppercase py-2 fw-bold text-white">NEW SEASON</h1>
+        <a href="" class="btn mt-3 text-uppercase">check now</a>
+</div>
+</div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#header" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#header" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</header>
+<!--Header Ends-->
+
+<!--collection start-->
+<section id="collection" class="py-5">
+    <div class="container">
+        <div class="title text-center">
+            <h2 class="position-relative d-inline-block">New Collection</h2>
+        </div>
+        <div class="row">
+            <div class="d-flex flex-wrap justify-content-center mt-5">
+                <button type="button" class="btn m-2 text-dark active-filter-btn">All</button>
+                <button type="button" class="btn m-2 text-dark">Best sellers</button>
+
+                <button type="button" class="btn m-2 text-dark">Featured</button>
+                <button type="button" class="btn m-2 text-dark">New Collection</button>
+            </div>
+            <div class="collection-list mt-5">
+                <div class="">
+                    <div class="collection-img position-relative">
+                        <img src="images/products/nike-gb0fb81e07_1280.jpg" alt="" class="w-100 ">
+                            <span class="position-absolute bg-primary text-white
+                             d-flex align-items-center justify-content-center">Sale</span>
+                    </div>
+                    <div class="">
+                        <div class="rating">
+                            <span class=""><i class="fa fa-star"></i></span>
+                            <span class=""><i class="fa fa-star"></i></span>
+                            <span class=""><i class="fa fa-star"></i></span>
+                            <span class=""><i class="fa fa-star"></i></span>
+                            <span class=""><i class="fa fa-star"></i></span>
+                        </div>
+                        <p class="Nike Air"></p>
+                        <span class="">$ 34.30</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--collection end-->
+
+
+
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+        <div class="row align-items-center projects">
+            <div class="col"> 
+              <h3>Contact us</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quod aliquam corporis tempore nostrum. Animi rem quisquam deleniti qui ad ipsa quod! Animi corrupti, ex blanditiis dolor error nulla consectetur.</p>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- End of contact section -->
+
+    <script src="js/script.js"></script>
+    <script src="js/jquery-3.7.0.js"></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

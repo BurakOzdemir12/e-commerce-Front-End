@@ -1,0 +1,248 @@
+/*google'dan font import etme*/
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+:root{
+    --lg-font: 'Kaisei Tokumin', serif; /* large fontlar için text family*/ 
+    --sm-font:'Poppins', sans-serif;    /* small fontlar için text family (General Font) */
+    --pink: #e5345b; /* Sık kullanıcağımız rengi tanıttık */
+} 
+body{
+    font-family: var(--sm-font);
+}
+/*buton*/
+.bg-primary{
+    background-color: var(--pink)!important;
+}
+/*buton*/
+.btn:not(.nav-btns button){
+    background-color: aliceblue;
+    color: rgba(85, 85, 85, 85);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+   
+}
+.btn:not(.nav-btns button):hover{
+   background-color: var(--pink);
+   color: aliceblue;
+   border-color: var(--pink);
+}
+/*navbar gölgelendirme*/
+.navbar{
+    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.2);
+}
+/*navbar logo resmi*/
+.navbar-brand img{
+
+}
+/*navbar marka text'i*/
+.navbar-brand span{
+letter-spacing: 3px;
+font-family: var(--lg-font);
+}
+/*Navbar Linkleri (Animasyon)*/
+.nav-link:hover{
+    color: var(--pink)!important;
+}
+/*Navbar itemleri */
+.nav-item{
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+/*header*/
+#header{
+background: url(../images/banner-img-1.jpg) top/cover no-repeat;
+}
+.carousel-inner h1{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+.carousel-item.btn{
+    border-color: aliceblue!important;
+}
+.carousel-item .btn:hover{
+    border-color:var(--pink)!important;
+}
+/*title*/
+.title h2::before{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--pink);
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/*collection*/
+.active-filter-btn{
+    background-color: var(--pink)!important;
+    color: aliceblue!important;
+    border-color: var(--pink)!important;
+}
+/*collection img's*/
+.collection-img span{
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+
+}
+/* contact section styling */
+#contact{
+    text-align: center;
+    background-color: #aadffa6e;
+    color: black;
+    
+}
+
+#contact h3{
+    text-align: center;
+    color: black;
+    box-shadow: 0 3px 9px 3px rgba(153, 152, 152, 0.1);
+}
+
+/*media queries*/
+@media(min-width:992px){
+    .nav-item{
+        border-bottom: none; /*nav itemlerinin altındaki çizgiyi kaldırdı*/
+    }
+}
+
+
+/*Text Animation*/
+@keyframes lights {
+    0% {
+      color: hsl(240, 6%, 10%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    
+    30% { 
+      color: hsl(240, 6%, 10%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    40% { 
+      color: hsl(240, 6%, 10%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 90%, 0.5),
+        -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+        0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    70% {
+      color: hsl(240, 9%, 63%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    100% {
+      color: hsl(230, 10%, 35%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    
+  }
+ /*header Animation*/
+  .header1 {
+   
+    animation: lights 5s 750ms linear infinite;
+  }
+  
+
+  @import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap');
+
+/*black lives matter animation*/
+.black-lives-matter {
+  font-size: 1.5vw;
+  line-height: 1.5vw;
+  min-height: 1.5vw;
+  min-height: 1.5vw;
+  
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 900;
+  background: url(https://raw.githubusercontent.com/s1mpson/-/master/codepen/black-lives-matter/victim-collage.png);
+  background-size: 40%;
+  background-position: 50% 50%;
+  -webkit-background-clip: text;
+  color: rgba(0,0,0,0.08);
+  animation: zoomout 10s ease 500ms forwards;
+}
+
+@keyframes zoomout {
+  from {
+    background-size: 40%;
+  }
+  to {
+    background-size: 10%;
+  }
+}
+
+/*brand name animation*/
+svg {
+    position: absolute;
+   
+    width: 200px;
+    height: 30px;
+    
+  }
+  
+  .path {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 100%;
+    animation: dash 4.5s linear;
+  }
+  
+  .path:nth-child(10) {
+    animation-delay: -2s;
+  }
+  .path:nth-child(9) {
+    animation-delay: -1.75s;
+  }
+  .path:nth-child(8) {
+    animation-delay: -1.5s;
+  }
+  .path:nth-child(7) {
+    animation-delay: -1.5s;
+  }
+  .path:nth-child(6) {
+    animation-delay: -1.25s;
+  }
+  .path:nth-child(5) {
+    animation-delay: -1s;
+  }
+  .path:nth-child(4) {
+    animation-delay: -0.75s;
+  }
+  .path:nth-child(3) {
+    animation-delay: -0.5s;
+  }
+  .path:nth-child(2) {
+    animation-delay: -0.25s;
+  }
+  
+  @keyframes dash {
+    0%,
+    50% {
+      stroke-dashoffset: 100%;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  

@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link href="
+https://cdn.jsdelivr.net/npm/font-awesome-animation@1.1.1/css/font-awesome-animation.min.css
+" rel="stylesheet">
+   </head>
 <body>
 <!--Navbar Starts-->
 <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
@@ -49,19 +51,24 @@
                     <a class="nav-link text-uppercase text-dark" href="#collection">collection</a>
                 </li>
                 <li class="nav-item px-2 py-2">
-                    <a class="nav-link text-uppercase text-dark" href="#specials">Specials</a>
+                    <a class="nav-link text-uppercase text-dark" href="#special">Specials</a>
+                </li>
+                <li class="nav-item px-2 py-2">
+                    <a class="nav-link text-uppercase text-dark" href="#offers">Offers</a>
                 </li>
                 <li class="nav-item px-2 py-2">
                     <a class="nav-link text-uppercase text-dark" href="#market">shop</a>
                 </li>
                 <li class="nav-item px-2 py-2">
-                    <a class="nav-link text-uppercase text-dark" href="#blogs">Blog</a>
+                    <a class="nav-link text-uppercase text-dark" href="#about">About Us</a>
                 </li>
-                <li class="nav-item px-2 py-2">
-                    <a class="nav-link text-uppercase text-dark" href="#about">about</a>
-                </li>
-                <li class="nav-item px-2 py-2">
-                    <a class="nav-link text-uppercase text-dark" href="#popular">Sign in</a>
+                <li class="nav-item dropdown px-2 py-2">
+                    <a class="nav-link dropdown-toggle text-uppercase  text-dark" role="button" data-bs-toggle="dropdown" href=" " id="signInDropdown">Sign in </a>
+                    <div class="dropdown-menu" aria-labelledby="signInDropdown">
+                        <!-- Dropdown menü içeriği -->
+                        <a class="dropdown-item" href="#">Option 1</a>
+                        
+                    </div>
                 </li>
             </ul>
         </div>
@@ -103,10 +110,9 @@
 
         <div class="row g-0">
             <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
-                <button type="button"  class="btn m-2 text-dark active-filter-btn "data-filter="*">All</button>
-                <button type="button"  class="btn m-2 text-dark"data-filter=".best">Best sellers</button>
-
-                <button type="button"  class="btn m-2 text-dark"data-filter=".feat">Featured</button>
+                <button type="button"  class="btn m-2 text-dark active-filter-btn " data-filter="*">All</button>
+                <button type="button"  class="btn m-2 text-dark" data-filter=".best">Best sellers</button>
+                <button type="button"  class="btn m-2 text-dark" data-filter=".feat">Featured</button>
                 <button type="button" class="btn m-2 text-dark" data-filter=".new">New Collection</button>
             </div>
             <div class="collection-list mt-5 row gx-0 gy-5 ">
@@ -129,9 +135,28 @@
                     </div>
                 </div>
                 <!---->
-                <div class="col-md-4 col-lg-3 col-xl-3 p-2 feat"> <!--Resim col büyüklüğü-->
+                <div class="col-md-4 col-lg-3 col-xl-3 p-2 best"> <!--Resim col büyüklüğü-->
                     <div class="collection-img position-relative">
                         <img src="images/products/jeans-g93f347abf_1280.jpg" alt="" class="w-100 ">
+                            <span class="position-absolute bg-primary text-white
+                             d-flex align-items-center justify-content-center">Sale</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="text-capitalize my-1"> Jeans</p>
+                        <span class="fw-bold ">$ 14.30</span>
+                    </div>
+                </div>
+                 <!---->
+                 <div class="col-md-4 col-lg-3 col-xl-3 p-2 feat"> <!--Resim col büyüklüğü-->
+                    <div class="collection-img position-relative">
+                        <img src="images/products/nike-gb0fb81e07_1280.jpg" alt="" class="w-100 ">
                             <span class="position-absolute bg-primary text-white
                              d-flex align-items-center justify-content-center">Sale</span>
                     </div>
@@ -143,8 +168,8 @@
                             <span class="text-primary"><i class="fa fa-star"></i></span>
                             <span class="text-primary"><i class="fa fa-star"></i></span>
                         </div>
-                        <p class="text-capitalize my-1"> Jeans</p>
-                        <span class="fw-bold ">$ 14.30</span>
+                        <p class="text-capitalize my-1">Nike Air</p>
+                        <span class="fw-bold ">$ 34.30</span>
                     </div>
                 </div>
                  <!---->
@@ -167,26 +192,7 @@
                     </div>
                 </div>
                  <!---->
-                 <div class="col-md-4 col-lg-3 col-xl-3 p-2 best"> <!--Resim col büyüklüğü-->
-                    <div class="collection-img position-relative">
-                        <img src="images/products/nike-gb0fb81e07_1280.jpg" alt="" class="w-100 ">
-                            <span class="position-absolute bg-primary text-white
-                             d-flex align-items-center justify-content-center">Sale</span>
-                    </div>
-                    <div class="text-center">
-                        <div class="rating mt-3">
-                            <span class="text-primary"><i class="fa fa-star"></i></span>
-                            <span class="text-primary"><i class="fa fa-star"></i></span>
-                            <span class="text-primary"><i class="fa fa-star"></i></span>
-                            <span class="text-primary"><i class="fa fa-star"></i></span>
-                            <span class="text-primary"><i class="fa fa-star"></i></span>
-                        </div>
-                        <p class="text-capitalize my-1">Nike Air</p>
-                        <span class="fw-bold ">$ 34.30</span>
-                    </div>
-                </div>
-                 <!---->
-                 <div class="col-md-4 col-lg-3 col-xl-3 p-2 feat"> <!--Resim col büyüklüğü-->
+                 <div class="col-md-4 col-lg-3 col-xl-3 p-2 new"> <!--Resim col büyüklüğü-->
                     <div class="collection-img position-relative">
                         <img src="images/products/nike-gb0fb81e07_1280.jpg" alt="" class="w-100 ">
                             <span class="position-absolute bg-primary text-white
@@ -208,12 +214,233 @@
         </div>
     </div>
 </section>
-<!--collection end-->
+<!--collection ends-->
 
+<!-- special products starts-->
+<section id="special" class="py-5">
+    <div class="container">
+        <div class="title text-center py-5">
+            <h2 class="position-relative d-inline-block">Special Selection</h2>
+        </div>
 
+        <div class="special-list row g-0"> <!-- special List products starts-->
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="special-img position-relative overflow-hidden">
+                    <img src="images/products/nike-gb0fb81e07_1280.jpg" class="w-100" alt="">
+                        <span class="position-absolute d-flex align-content-center 
+                        justify-content-center text-primary fs-4">
+                             <i class="fas fa-heart"></i> 
+                        </span>
+                </div>
+                            <div class="text-center">
+                                <p class="text-capitalize mt-3 mb-1">Nike Air</p>
+                                <span class="fw-bold d-block">$ 34.30</span>
+                                <a href="" class="btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+            </div>
+            <!-- one product-->
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="special-img position-relative overflow-hidden">
+                    <img src="images/products/tshirt1.png" class="w-100" alt="">
+                        <span class="position-absolute d-flex align-content-center 
+                        justify-content-center text-primary fs-4">
+                             <i class="fas fa-heart"></i> 
+                        </span>
+                </div>
+                            <div class="text-center">
+                                <p class="text-capitalize mt-3 mb-1">Black Tshirt</p>
+                                <span class="fw-bold d-block">$ 12.30</span>
+                                <a href="" class="btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+            </div>
+             <!-- one product-->
+             <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="special-img position-relative overflow-hidden">
+                    <img src="images/products/tshirt2.png" class="w-100" alt="">
+                        <span class="position-absolute d-flex align-content-center 
+                        justify-content-center text-primary fs-4">
+                             <i class="fas fa-heart"></i> 
+                        </span>
+                </div>
+                            <div class="text-center">
+                                <p class="text-capitalize mt-3 mb-1">Black Tshirt</p>
+                                <span class="fw-bold d-block">$ 34.30</span>
+                                <a href="" class="btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+            </div>
+             <!-- one product-->
+             <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="special-img position-relative overflow-hidden">
+                    <img src="images/products/nike-gb0fb81e07_1280.jpg" class="w-100" alt="">
+                        <span class="position-absolute d-flex align-content-center 
+                        justify-content-center text-primary fs-4">
+                             <i class="fas fa-heart"></i> 
+                        </span>
+                </div>
+                            <div class="text-center">
+                                <p class="text-capitalize mt-3 mb-1">Nike Air</p>
+                                <span class="fw-bold d-block">$ 34.30</span>
+                                <a href="" class="btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+            </div>
+             <!-- special List products ends-->
+        </div>
+       
+    </div>
+</section>
+<!--special products ends-->
+<!--offer starts-->
+<section id="offers" class="py-5">
+    <div class="container">
+        <div class="row d-flex align-items-center text-center 
+        justify-content-lg-start text-lg-start">
+            <div class="offers-content">
+                <span class="text-white">Discount %25</span>
+                <h2 class="mt-0 mb-5 text-white">Grand Sale Baby Clothes!</h2>
+           <a href="" class="btn ">Check out</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--offers ends-->
+<!-- newsletter -->
+<section id = "newsletter" class = "py-5">
+    <div class = "container">
+        <div class = "d-flex flex-column align-items-center justify-content-center">
+            <div class = "title text-center pt-3 pb-5">
+                <h2 class = "position-relative d-inline-block ms-4">Newsletter Subscription</h2>
+            </div>
 
+            <p class = "text-center text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus rem officia accusantium maiores quisquam dolorum?</p>
+            <div class = "input-group mb-3 mt-3">
+                <input type = "text" class = "form-control" placeholder="Enter Your Email ...">
+                <button class = "btn btn-primary" type = "submit">Subscribe</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end of newsletter -->
+<!-- footer-->
+<footer id="about" class="bg-dark opacity-75 py-5">
+    <div class="container">
+        <div class="row text-white g-4">
+            <div class="col-md-6 col-lg-3">
+                <a href="index.html" class="text-uppercase text-decoration-none 
+                brand text-white">Shopping</a>
+                <p class="text-light opacity-50 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Vero, dolor! Molestias quos nemo laudantium harum nisi, 
+        debitis ab dicta eligendi aperiam ratione architecto consequuntur voluptatibus ea temporibus modi fuga,
+        maxime numquam quia ipsa incidunt cumque impedit. </p>
+            </div>
+            <div class="col-md-6 col-lg-3  ">
+                <h5 class="fw-light ">Links</h5>
+                <ul class="list-unstyled">
+                    <li class="my-3">
+                        <a href="" class="text-white-50 text-decoration-none ">
+                            <i class="fas fa-chevron-right me-1"> </i>Home
+                        </a>
+                    </li>
+                    <li class="my-3">
+                        <a href="" class="text-white-50 text-decoration-none ">
+                            <i class="fas fa-chevron-right me-1"> </i>Collection
+                        </a>
+                    </li>
+                    <li class="my-3">
+                        <a href="" class="text-white-50 text-decoration-none ">
+                            <i class="fas fa-chevron-right me-1"> </i>Specials
+                        </a>
+                    </li>
+                    <li class="my-3">
+                        <a href="" class="text-white-50 text-decoration-none">
+                            <i class="fas fa-chevron-right me-1"> </i>Offers
+                        </a>
+                    </li>
+                    <li class="my-3">
+                        <a href="" class="text-white-50 text-decoration-none ">
+                            <i class="fas fa-chevron-right me-1"> </i>Shop
+                        </a>
+                    </li>
+                    <li class="my-3">
+                        <a href="" class="text-white-50 text-decoration-none ">
+                            <i class="fas fa-chevron-right me-1"> </i>Blog
+                        </a>
+                    </li>
+                    <li class="my-3">
+                        <a href="" class="text-white-50 text-decoration-none ">
+                            <i class="fas fa-chevron-right me-1"> </i>About Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <h5 class="fw-light mb-3">Contact Us</h5>
 
-  <!-- Contact Section -->
+                <div class="d-flex justify-content-start align-items-start my-2 opacity-75">
+                    <span class="me-3">
+                        <i class="fas fa-map-marked-alt fa-beat" style="color: #e2e2e2;"></i>
+                    </span>
+                    <span class="fw-light">
+                        Nicosia
+                    </span>
+                </div>
+                <div class="d-flex justify-content-start align-items-start my-2 opacity-75 ">
+                    <span class="me-3">
+                        <i class="fa-solid fa-envelope fa-beat"></i>
+                    </span>
+                    <span class="fw-light">
+                        shopping.shop@gmail.com
+                    </span>
+                </div>
+                <div class="d-flex justify-content-start align-items-start my-2 opacity-75">
+                    <span class="me-3">
+                        <i class="fab  fa-whatsapp fa-beat"></i>
+                    </span>
+                    <span class="fw-light">
+                        43225
+                    </span>
+                </div>
+                <div class="d-flex justify-content-start align-items-start my-2 opacity-75">
+                    <span class="me-3">
+                        <i class="fa fa-light fa-phone-alt fa-beat " style="color:#fafafc;"></i>
+                    </span>
+                    <span class="fw-light">
+                        +021442
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <h5 class="fw-light mb-3">Follow Us</h5>
+                <div >
+                    <ul class="list-unstyled d-flex">
+                        <li>
+                            <a href="" class="text-white text-decoration-none fs-4 me-4 ">
+                                <i class="fab fa-facebook animated"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="text-white text-decoration-none fs-4 me-4">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="text-white text-decoration-none fs-4 me-4">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="text-white text-decoration-none fs-4 me-4">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--footer ends-->
+
+  <!-- Contact Section 
   <section id="contact">
     <div class="container">
         <div class="row align-items-center projects">
@@ -223,11 +450,11 @@
             </div>
         </div>
     </div>
-  </section>
+  </section>-->
   <!-- End of contact section -->
-  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/jquery-3.7.0.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-3.7.0.js"></script>
+ <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

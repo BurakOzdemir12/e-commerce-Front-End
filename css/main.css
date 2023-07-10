@@ -34,6 +34,7 @@ body{
 }
 /*navbar gölgelendirme*/
 .navbar{
+  -webkit-box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
     box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.2);
 }
 /*navbar logo resmi*/
@@ -77,35 +78,114 @@ background: url(../images/banner-img-1.jpg) top/cover no-repeat;
     background-color: var(--pink);
     left: -20px;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
 }
+
 /*collection*/
 .active-filter-btn{
     background-color: var(--pink)!important;
     color: aliceblue!important;
     border-color: var(--pink)!important;
 }
+/*filter buttons *best seller*/
+.filter-button-group .btn:hover{
+  color: aliceblue!important;
+}
 /*collection img's*/
 .collection-img span{
+  
     top: 20px;
     right: 20px;
     width: 46px;
     height: 46px;
     border-radius: 50%;
-
 }
-/* contact section styling */
+
+
+/* contact section styling 
 #contact{
     text-align: center;
-    background-color: #aadffa6e;
-    color: black;
+    background-color: rgba(179, 179, 179, 0.05);
+    color: rgb(189, 180, 180);
     
 }
-
 #contact h3{
     text-align: center;
-    color: black;
-    box-shadow: 0 3px 9px 3px rgba(153, 152, 152, 0.1);
+    color: rgba(145, 145, 145, 0.678);
+    box-shadow: 0 3px 9px 3px rgba(172, 164, 164, 0.575);
+}*/
+
+/*special section*/
+.special-img span{ /*span pozisyonu */
+  top: 20px;
+  right: 20px;
+}
+.special-list .btn{ /*span'daki buton boyutunu ayarlama *padding */
+padding: 8px 20px!important;
+}
+.special-img img{
+  transition: all 0.3s ease;
+}
+.special-img:hover img{/* Resim üstüne gelince hover*/
+  transform: scale(1.2);
+}
+
+/*Offers*/
+#offers{
+  background: url(../images/offers-1.jpg) center/cover no-repeat;
+}
+#offers .row{
+  min-height: 49vh;
+}
+.offers-content span{
+  font-size: 35px;
+  
+}
+.offers-content h2{
+  font-size: 50px;
+  
+  font-family: var(--lg-font);
+}
+.offers-content .btn{
+border-color: transparent!important;
+margin-bottom: 350px;
+}
+/* newsletter */
+#newsletter{
+    background-color: rgba(179, 179, 179, 0.05);
+}
+#newsletter p{
+    max-width: 600px;
+}
+#newsletter .input-group{
+    max-width: 500px;
+}
+#newsletter .form-control{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+#newsletter .btn{
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
+}
+#newsletter .btn:hover{
+    background-color: #000;
+    border-color: #000;
+}
+/*footer*/
+footer .brand{
+  font-family: var(--lg-font);
+  letter-spacing: 3px;
+}
+footer a{
+  
+  transition: color 0.3s ease;
+}
+footer a:hover{
+  color: var(--pink)!important;
 }
 
 /*media queries*/

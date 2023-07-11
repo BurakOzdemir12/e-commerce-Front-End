@@ -8,7 +8,6 @@
 } 
 body{
     font-family: var(--sm-font);
-  
 }
 /*buton*/
 .bg-primary{
@@ -54,6 +53,9 @@ font-family: var(--lg-font);
 .nav-item{
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
 }
+
+
+
 /*header*/
 #header{
 background: url(../images/banner-img-1.jpg) top/cover no-repeat;
@@ -101,21 +103,16 @@ background: url(../images/banner-img-1.jpg) top/cover no-repeat;
     width: 46px;
     height: 46px;
     border-radius: 50%;
-}
-
-
-/* contact section styling 
-#contact{
-    text-align: center;
-    background-color: rgba(179, 179, 179, 0.05);
-    color: rgb(189, 180, 180);
+    
+      cursor: pointer;
     
 }
-#contact h3{
-    text-align: center;
-    color: rgba(145, 145, 145, 0.678);
-    box-shadow: 0 3px 9px 3px rgba(172, 164, 164, 0.575);
-}*/
+.cnt {
+  display: flex;
+  justify-content: start;
+  margin-top: 12ch;
+  margin-left: 0ch;
+}
 
 /*special section*/
 .special-img span{ /*span pozisyonu */
@@ -186,6 +183,20 @@ footer a{
 }
 footer a:hover{
   color: var(--pink)!important;
+}
+/*login*/
+.form-group{
+
+position: absolute;
+content: "";
+width: 4px;
+height: 50px;
+background-color: var(--pink);
+left: -20px;
+top: 50%;
+-webkit-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 /*media queries*/
@@ -332,3 +343,5 @@ svg {
     }
   }
   
+
+ 

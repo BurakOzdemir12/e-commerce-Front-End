@@ -111,7 +111,7 @@ background: url(../images/banner-img-1.jpg) top/cover no-repeat;
   display: flex;
   justify-content: start;
   margin-top: 12ch;
-  margin-left: 0ch;
+  margin-left: 1ch;
 }
 
 /*special section*/
